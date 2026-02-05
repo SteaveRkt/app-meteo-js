@@ -64,7 +64,7 @@ async function tempe(la, lo) {
   const tp = dt.hourly.temperature_2m[0];
   const d = decode(w);
   title.childNodes[1].innerText = d[1];
-  temp.childNodes[1].src= `${d[0]}`;
+  temp.childNodes[1].src= `/public${d[0]}`;
   temp.childNodes[3].innerText = `${Math.round(tp)}°C`;
   tm.childNodes[1].innerText = `${Math.round(max)}°C`;
   tm.childNodes[5].innerText = `${Math.round(min)}°C`;
@@ -83,7 +83,7 @@ for (i=0;i<6;i++){
     }
     let wco=dt.hourly.weather_code[i+1];
     let dco=decode(wco);
-    j[i].children[1].src= `${dco[0]}`;
+    j[i].children[1].src= `/public${dco[0]}`;
     j[i].children[2].innerText=Math.round(dt.hourly.temperature_2m[i+1])+"°C";
     let taona =new Date();
 foot.innerHTML=`Design by Steave Rkt. OpenMeteo &copy${taona.getFullYear()}`;    
