@@ -1,6 +1,4 @@
-export default {
-    base:"/app-meteo-js/",
-    build:{
-        outDir:'dist',
-    }
-};
+import { defineConfig } from "vite";
+export default defineConfig({
+    base:'/app-meteo-js/',
+});
