@@ -1,3 +1,6 @@
 export default {
-    base:"/meteo-js/",
+    base:"/app-meteo-js/",
+    build:{
+        outDir:'dist',
+    }
 };
