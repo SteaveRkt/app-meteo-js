@@ -11,6 +11,7 @@ const foot=document.querySelector('footer');
 form.addEventListener("submit", foo);
 function foo(e) {
   e.preventDefault();
+  document.activeElement.blur();
   carte.classList.remove('active')
   load.classList.add('active');
   let toerana = inp.value;
